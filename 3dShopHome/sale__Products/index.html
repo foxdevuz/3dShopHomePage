@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | e-shop.uz</title>
+    <!-- link CSs -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- F-Awesome CSS -->
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.css">
+</head>
+<body>
+    <!-- Top Start -->
+    <div class="container">
+        <div class="way">
+            <h4>Home/</h4><h4>Hot Detal/</h4><h4>Nike Air Max React</h4>
+        </div>
+    </div>
+    <!-- Top end -->
+    <!-- Main section start -->
+    <div class="container">
+        <section class="main">
+            <div class="mainNav">
+                <ul>
+                    <li><a href="#">PRODUCT</a></li>
+                </ul>
+                <ul class="dontknow">
+                    <li><a href="#">PRICE</a></li>
+                    <li><a href="#">QITY</a></li>
+                    <li><a href="#">UNIT PRICE</a></li>
+                </ul>
+            </div>
+            <div class="productContainer">
+                <div class="productInfo">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="../images/product.png" alt="Product">
+                    <h4>Nike Air Max Pro</h4>
+                </div>
+                <div class="saleProduct">
+                    <h4 class="cost">0$</h4>
+                    <div class="count">
+                        <span id="minus">-</span>
+                        <span id="son">1</span>
+                        <span id="plus">+</span>
+                    </div>
+                    <h4 class="cost2">0$</h4>
+                </div>
+            </div>
+        </section>
+        <section class="sotib__Olish">
+            <div>
+                <p>Subtotal</p>
+                <p>Shipping free</p>
+                <p>Cupon</p>
+                <h3 class="total">TOTAL</h3>
+            </div>
+            <div>
+                <p id="narx">0</p>
+                <p id="free">0</p>
+                <p id="cupon">no</p>
+                <h4 id="total">0</h4>
+            </div>
+            <button id="openModal">Check Out</button>
+        </section>
+    </div>
+    <!-- Main section end -->
+
+    <!-- Modal start -->
+    <div class="modal" id="modal1">
+        <span id="remove"><i class="fa-solid fa-xmark"></i></span>
+        <h4>Make Payment</h4>
+        <form>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" name="" id="surname" placeholder="Last Name" required>
+            <input type="email" name="" id="mail" placeholder="Email Adress" required>
+            <input type="text" name="" id="delivery" placeholder="Enter Adress for delivery" required>
+            <input type="text" name="" id="phone" placeholder="Phone number" required>
+            <button type="submit" id="payment">Go To Payment</button>
+        </form>
+    </div>
+
+    <div class="modal" id="modal2">
+        <span  id="remove2"><i class="fa-solid fa-xmark"></i></span>
+        <h4>Make Payment</h4>
+        <form>
+            <input type="text" id="name" placeholder="Card number" required>
+            <input type="text" name="" id="surname" placeholder="Expiry" required>
+            <input type="text" name="" id="mail" placeholder="CVV" required>
+            <input type="text" name="" id="delivery" placeholder="Holder Number" required>
+            <button type="submit" id="confirm">Confirm</button>
+        </form>
+    </div>
+    <div class="modalDone">
+        <h4>Make Payment</h4>
+        <h5 class="done">
+           Done
+        </h5>
+        <button id="closeModal">Close</button>
+    </div>
+    <!-- Modal end -->
+
+
+
+
+
+    <!-- MY JS -->
+    <script src="./js/app.js"></script>
+    <!-- f-awesome JS -->
+    <script src="../fontawesome-free-6.0.0-web/js/all.js"></script>
+</body>
+</html>
